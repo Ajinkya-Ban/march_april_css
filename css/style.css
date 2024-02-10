@@ -12,7 +12,7 @@ body{
 {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     min-height: 100px;
     /* border: 1px solid #000; */
     margin: 10px auto;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 200px;
+           aspect-ratio: 1 / 1;
+           border: 1px solid #000;
+           background-color: royalblue;
+           animation-name: anni;
+           animation-duration: 4s;
+           /* animation-delay: 2s; */
+          animation-iteration-count: infinite;
+          animation-direction: alternate-reverse;
+          animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+          position: relative;
+        }
+
+        @keyframes anni
+        {
+                /* from{
+                        background-color: brown;
+                }
+                to{
+                    background-color: royalblue;
+
+                } */
+
+                0%
+                {
+                    background-color: brown;
+                    border-radius: 10%;
+                    top:0;
+                    left:0;
+
+                }
+                25%
+                {
+                    background-color: black;
+                    border-radius: 20%;
+                    top:0;
+                    left: 300px;
+
+                }
+                50%
+                {
+                    background-color: orange;
+                    border-radius: 30%;
+                    top:300px;
+                    left: 300px;
+                }
+                75%
+                {
+                    background-color: green;
+                    border-radius: 40%;
+                    top:300px;
+                    left:0;
+                }
+                100%
+                {
+                    background-color: royalblue;
+                    border-radius: 50%;
+                    top:0;
+                    left: 0;
+                }
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="box">
+
+    </div>
+
+</body>
+</html>
