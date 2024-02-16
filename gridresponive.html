@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 80%;
+            min-height: 200px;
+            border: 1px solid #000;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px auto 200px 100px;
+            grid-template-areas: "nav nav nav nav"
+                                 "sidebar main main main"
+                                 "sidebar box1 box2 box3"
+                                 "footer footer footer footer";
+            grid-gap: 10px;
+                                  
+        }
+        .nav
+        {
+            background-color: blueviolet;
+            color: white;
+            grid-area: nav;
+        }
+        .sidebar
+        {
+            background-color: brown;
+            color: white;
+            grid-area: sidebar;
+        }
+        .main-con
+        {
+            background-color: darkcyan;
+            color: white;
+            grid-area: main;
+        }
+        .box1
+        {
+            background-color: darkolivegreen;
+            color: white;
+            grid-area: box1;
+        }
+        .box1 img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .box2
+        {
+            background-color: darkolivegreen;
+            color: white;
+            grid-area: box2;
+        }
+        .box2 img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .box3
+        {
+            background-color: darkolivegreen;
+            color: white;
+            grid-area: box3;
+        }
+        .box3 img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .footer
+        {
+            background-color: blueviolet;
+            color: white;
+            grid-area: footer;
+        }
+        @media only screen and (max-width: 768px){
+            .box
+            {
+               width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 60px 100px auto 300px 300px 300px 60px;
+                grid-template-areas: "nav"
+                                     "sidebar"
+                                     "main"
+                                     "box1"
+                                     "box2"
+                                     "box3"
+                                     "footer";
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="nav">Navigation</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main-con">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat nihil, assumenda ab aut quam vel incidunt in quibusdam asperiores debitis voluptatem porro repudiandae autem unde, iure reiciendis aspernatur laboriosam obcaecati impedit minima? Ex aut sunt inventore reiciendis? Qui quod excepturi culpa, totam distinctio aliquam suscipit odit dolor eum at dolorem repudiandae illo modi, impedit quia commodi! Quibusdam, mollitia dolorem fuga odio vero qui itaque facilis temporibus ducimus nisi doloribus alias esse amet necessitatibus ad quisquam impedit maxime minima cumque officia animi libero error. Maiores, dolore tenetur nesciunt suscipit odio tempora recusandae voluptas delectus omnis tempore dolor sit, distinctio sequi?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat nihil, assumenda ab aut quam vel incidunt in quibusdam asperiores debitis voluptatem porro repudiandae autem unde, iure reiciendis aspernatur laboriosam obcaecati impedit minima? Ex aut sunt inventore reiciendis? Qui quod excepturi culpa, totam distinctio aliquam suscipit odit dolor eum at dolorem repudiandae illo modi, impedit quia commodi! Quibusdam, mollitia dolorem fuga odio vero qui itaque facilis temporibus ducimus nisi doloribus alias esse amet necessitatibus ad quisquam impedit maxime minima cumque officia animi libero error. Maiores, dolore tenetur nesciunt suscipit odio tempora recusandae voluptas delectus omnis tempore dolor sit, distinctio sequi?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat nihil, assumenda ab aut quam vel incidunt in quibusdam asperiores debitis voluptatem porro repudiandae autem unde, iure reiciendis aspernatur laboriosam obcaecati impedit minima? Ex aut sunt inventore reiciendis? Qui quod excepturi culpa, totam distinctio aliquam suscipit odit dolor eum at dolorem repudiandae illo modi, impedit quia commodi! Quibusdam, mollitia dolorem fuga odio vero qui itaque facilis temporibus ducimus nisi doloribus alias esse amet necessitatibus ad quisquam impedit maxime minima cumque officia animi libero error. Maiores, dolore tenetur nesciunt suscipit odio tempora recusandae voluptas delectus omnis tempore dolor sit, distinctio sequi?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat nihil, assumenda ab aut quam vel incidunt in quibusdam asperiores debitis voluptatem porro repudiandae autem unde, iure reiciendis aspernatur laboriosam obcaecati impedit minima? Ex aut sunt inventore reiciendis? Qui quod excepturi culpa, totam distinctio aliquam suscipit odit dolor eum at dolorem repudiandae illo modi, impedit quia commodi! Quibusdam, mollitia dolorem fuga odio vero qui itaque facilis temporibus ducimus nisi doloribus alias esse amet necessitatibus ad quisquam impedit maxime minima cumque officia animi libero error. Maiores, dolore tenetur nesciunt suscipit odio tempora recusandae voluptas delectus omnis tempore dolor sit, distinctio sequi?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat nihil, assumenda ab aut quam vel incidunt in quibusdam asperiores debitis voluptatem porro repudiandae autem unde, iure reiciendis aspernatur laboriosam obcaecati impedit minima? Ex aut sunt inventore reiciendis? Qui quod excepturi culpa, totam distinctio aliquam suscipit odit dolor eum at dolorem repudiandae illo modi, impedit quia commodi! Quibusdam, mollitia dolorem fuga odio vero qui itaque facilis temporibus ducimus nisi doloribus alias esse amet necessitatibus ad quisquam impedit maxime minima cumque officia animi libero error. Maiores, dolore tenetur nesciunt suscipit odio tempora recusandae voluptas delectus omnis tempore dolor sit, distinctio sequi?
+            </p>
+        </div>
+        <div class="box1">
+            <img src="imgs/shape2.jpg">
+        </div>
+        <div class="box2">
+            <img src="imgs/shape2.jpg">
+        </div>
+        <div class="box3">
+            <img src="imgs/shape2.jpg">
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

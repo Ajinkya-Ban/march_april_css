@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        body
+        {
+            background-color:rgb(248, 234, 209);
+        }
+        .main
+        {
+            width: 60vw;
+            height: 150vh  auto;
+            border: 1px solid black;
+            margin: 20px auto;
+        }
+         .header
+         {
+            width: 58vw;
+            height: 15vh;
+            border: 1px solid black;
+            margin: 2vw auto;
+
+           
+         }
+         .logo
+         {
+            width: 21vw;
+            height: 15vh;
+            float: left;
+            border: 1px solid;
+            background-color: fuchsia;
+            
+            
+        animation-name: color;
+        animation-duration: 3s;
+        animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        animation-delay: 1s;
+        animation-iteration-count:infinite ;
+        animation-direction: alternate;
+        /*
+/* Multiple animations 
+animation-direction: normal, reverse;
+animation-direction: alternate, reverse, normal
+*/
+      }
+      @keyframes color{
+        from {background-color: gold}
+        to {background-color: rgb(122, 62, 183);}
+         
+      }
+
+     .menue {
+    width: 35vw;
+    height: 15vh;
+    float: right;
+    border: 1px solid;
+    background-color: rgb(81, 15, 114);
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-around; /* Spread the links horizontally */
+}
+
+.menue a {
+    text-decoration: none;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    color: rgb(220, 248, 62);
+}
+.menue a:hover
+{
+  background-color: rgb(236, 183, 221);
+  color: rgb(61, 5, 57);
+}
+
+        .slider
+        {
+            width: 58vw;
+            min-height: 30vh;
+            border: 1px double;
+            margin: 2vw auto;
+            background-color:rgb(169, 19, 169) ;
+
+        }
+        .content
+        {
+            width:58vw;
+            min-height: 40vh;
+            border: 1px solid;
+            margin: 2vw auto;
+            
+        }
+        .sidebar
+        {
+            width:20vw;
+            height:40vh ;
+            border: 1px solid;
+            float: left;
+            background-color:hotpink ;
+        }
+        .para
+        {
+            width: 36vw;
+            height: 40vh;
+            border: 1px solid;
+            float: right;
+            background-color: rgb(241, 138, 225);
+        }
+        .footer
+        {
+            width: 58vw;
+            height: 15vh;
+            margin: 2vw auto;
+            background-color: mediumorchid;
+        }
+
+    @media screen and (max-width: 768px) {
+    .main
+    {
+        width: 90vw;
+        
+        
+    }
+
+    .header,.slider,.content,.footer
+     {
+        width: 90vw;
+       height: auto;
+        margin: 2vw auto;
+        
+     }
+
+     .logo,.menue,  .sidebar, .para 
+     {
+        
+        width: 100%;
+        float: none;
+        
+    
+    }
+    
+    }
+   /* .main is set to a width of 90vw, adjusting the overall width of the main container.
+.header, .slider, .content, and .footer are given a width of 90vw and centered with a margin.
+.logo, .menue, .sidebar, and .para are set to a width of 100% and the float property is set to none to stack them vertically.*/
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+
+            <div class="logo">
+                logo
+             </div>
+                <div class="menue">
+              <a href="#">About</a>
+              <a href="#">contact</a>
+              <a href="#">location</a>
+              <a href="#">jobs</a>
+                
+            </div>
+        </div>
+
+        <div class="slider">
+           slider
+        </div>
+
+        <div class="content">
+            <div class="sidebar">
+                sidebar
+
+                </div>
+                <div class="para">
+                content
+                </div>
+            
+        </div>
+
+        <div class="footer">
+          footer
+        </div>
+    </div>
+</body>
+</html>
